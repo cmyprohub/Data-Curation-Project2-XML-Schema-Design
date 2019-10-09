@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<!DOCTYPE WSUClassSchedule[
+<!ELEMENT WSUClassSchedule (ScheduleLine+)>
+<!ELEMENT ScheduleLine (SLN?,Department,Semester,CourseDetails,Credits,Days,Time,Bldg?,Room?,Dates,Instructor+,Limit,Enrolled)>
+<!ELEMENT SLN (#PCDATA)>
+<!ELEMENT Department (#PCDATA)>
+<!ELEMENT Semester (#PCDATA)>
+<!ELEMENT CourseDetails (CourseCode,CourseName)>
+<!ELEMENT CourseCode (#PCDATA)>
+<!ELEMENT CourseName (#PCDATA)>
+<!ELEMENT Credits (#PCDATA)>
+<!ELEMENT Days (#PCDATA)>
+<!ELEMENT Time (#PCDATA)>
+<!ATTLIST Time StartTime NMTOKEN  #REQUIRED>
+<!ATTLIST Time EndTime NMTOKEN #REQUIRED>
+<!ATTLIST Time TimeofTheDay (AM|PM) #REQUIRED>
+<!ELEMENT Bldg (#PCDATA)>
+<!ELEMENT Room (#PCDATA)>
+<!ELEMENT Dates (#PCDATA)>
+<!ATTLIST Dates StartDate (Aug20|Aug21|Aug22) #REQUIRED>
+<!ATTLIST Dates EndDate (Dec07|Dec08|Dec09) #REQUIRED>
+<!ELEMENT Instructor (#PCDATA)>
+<!ELEMENT Limit (#PCDATA)>
+<!ELEMENT Enrolled (#PCDATA)>
+<!ENTITY Department1 "Bio Engineering">
+<!ENTITY Semester1 "Fall 2018">
+]>
+<WSUClassSchedule>
+   <ScheduleLine>
+       <SLN>1271</SLN>
+       <Department>&Department1;</Department>
+       <Semester>&Semester1;</Semester>
+       <CourseDetails>
+		<CourseCode>205</CourseCode>
+       		<CourseName>Bioengineering Professional Preparation and Ethics</CourseName>
+       </CourseDetails>
+       <Credits>1</Credits>
+       <Days>TU</Days>
+       <Time StartTime ="12" EndTime="12.50" TimeofTheDay="PM"></Time>
+       <Bldg>SPRK</Bldg>
+       <Room>327</Room>
+       <Dates StartDate ="Aug20" EndDate="Dec07"></Dates>
+       <Instructor>A Vasavada</Instructor>
+       <Limit>40</Limit>
+       <Enrolled>38</Enrolled>
+   </ScheduleLine>
+   <ScheduleLine>
+       <SLN>6229</SLN>
+       <Department>&Department1;</Department>
+       <Semester>&Semester1;</Semester>
+       <CourseDetails>
+        	<CourseCode>310</CourseCode>
+       		<CourseName>Introduction to Transport Processes</CourseName>
+       </CourseDetails>
+       <Credits>3</Credits>
+       <Days>TU,TH</Days>
+       <Time StartTime ="9.10" EndTime="10.25" TimeofTheDay="AM"></Time>
+       <Bldg>WEGN</Bldg>
+       <Room>G1</Room>
+       <Dates StartDate ="Aug20" EndDate="Dec07"></Dates>
+       <Instructor>P Pfromm</Instructor>
+       <Limit>25</Limit>
+       <Enrolled>24</Enrolled>
+   </ScheduleLine>
+   <ScheduleLine>
+       <SLN>1272</SLN>
+       <Department>&Department1;</Department>
+       <Semester>&Semester1;</Semester>
+       <CourseDetails>
+		<CourseCode>321</CourseCode>
+       		<CourseName>Mechanics of Biological Materials</CourseName>
+       </CourseDetails>
+       <Credits>3</Credits>
+       <Days>M,W,F</Days>
+       <Time StartTime ="10.10" EndTime="11" TimeofTheDay="AM"></Time>
+       <Bldg>SPRK</Bldg>
+       <Room>223</Room>
+       <Dates StartDate ="Aug20" EndDate="Dec07"></Dates>
+       <Instructor>A Vasavada</Instructor>
+       <Limit>25</Limit>
+       <Enrolled>25</Enrolled>
+   </ScheduleLine>
+   <ScheduleLine>
+       <SLN>4756</SLN>
+       <Department>&Department1;</Department>
+       <Semester>&Semester1;</Semester>
+       <CourseDetails>
+		<CourseCode>322</CourseCode>
+       		<CourseName>[M] Mechanics of Biological Materials Lab</CourseName>
+       </CourseDetails>
+       <Credits>1</Credits>
+       <Days>TU</Days>
+       <Time StartTime ="14.50" EndTime="17.40" TimeofTheDay="PM"></Time>
+       <Bldg>WEGN</Bldg>
+       <Room>205</Room>
+       <Dates StartDate ="Aug20" EndDate="Dec07"></Dates>
+       <Instructor>H Davis</Instructor>
+       <Limit>24</Limit>
+       <Enrolled>24</Enrolled>
+   </ScheduleLine>
+   <ScheduleLine>
+       <SLN>1273</SLN>
+       <Department>&Department1;</Department>
+       <Semester>&Semester1;</Semester>
+       <CourseDetails>
+		<CourseCode>350</CourseCode>
+       		<CourseName>Introduction to Cellular Bioengineering</CourseName>
+       </CourseDetails>
+       <Credits>3</Credits>
+       <Days>M,W,F</Days>
+       <Time StartTime ="13.10" EndTime="14" TimeofTheDay="PM"></Time>
+       <Dates StartDate ="Aug20" EndDate="Dec07"></Dates>
+       <Instructor>W Dong</Instructor>
+       <Limit>30</Limit>
+       <Enrolled>25</Enrolled>
+   </ScheduleLine>
+</WSUClassSchedule>
+
+
+
+
+
+
+
+
+							
